@@ -1,0 +1,180 @@
+/* Reset. */
+* {
+    box-sizing: border-box;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xxx-large;
+}
+
+a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+
+}
+
+footer {
+    font-size: x-small;
+    background-color: #03213ff0;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-image: url("https://i.makeagif.com/media/8-06-2022/rJgKqq.gif");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(221, 221, 242, 0.75);
+    /* Transparent dark blue background */
+    padding: 20px;
+    font-size: large;
+    box-shadow: 0 0 20px 5px rgb(255, 255, 255);
+    /* Add glowing shadow effect */
+}
+
+header a {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    color: #f9f9f9;
+    /* Text color */
+    text-decoration: double;
+    /* Remove underline from links */
+    margin-bottom: 15px;
+    /* Add some space between links */
+    transition: color 0.5s;
+    /* Smooth transition effect for color change */
+
+}
+
+header a:hover {
+    color: #5b2909;
+    /* Change the text color on hover */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 0 20px 5px black;
+}
+
+/* Panels. */
+.splitview {
+    position: relative;
+    width: 100%;
+    min-height: 45vw;
+    overflow: hidden;
+    box-shadow: 0 0 20px 5px black;
+}
+
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+.panel .content {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    color: #FFF;
+}
+
+.panel .description {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.panel img {
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.bottom {
+    background-image: url("https://i.pinimg.com/originals/d5/03/2a/d5032a8070330382f18a13055c7ba278.gif");
+    background-color: rgb(21, 4, 4);
+    z-index: 1;
+}
+
+.bottom .description {
+    right: 5%;
+}
+
+.top {
+    background-image: url("https://cdn.dribbble.com/users/2120934/screenshots/6193524/19_mostlysunny.gif");
+    background-color: rgb(9, 4, 63);
+    z-index: 2;
+    width: 50vw;
+
+    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+}
+
+.top .description {
+    left: 5%;
+}
+
+/* Handle. */
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: rgb(100, 187, 219);
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+    box-shadow: 0 0 10px 5px rgb(20, 60, 79);
+}
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+/* Responsive. */
+@media (max-width: 900px) {
+    body {
+        font-size: 75%;
+    }
+}
+
+p {
+    font-size: x-large;
+}
+
+h1 {
+    font-size: xx-large;
+}

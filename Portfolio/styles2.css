@@ -1,0 +1,384 @@
+/* Reset CSS */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+.footer {
+    font-family: 'Times New Roman', Times, serif;
+    color: #b3b0ed;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: #bbe8a7;
+}
+
+.parisienne-regular {
+
+    font-family: "Parisienne", cursive;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.descr {
+    font-style: bold;
+    color: #d9f5c8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif;
+    font-size: large;
+}
+
+.tile {
+    width: 1300px;
+    /* 3 times larger */
+    height: 400px;
+    /* 3 times larger */
+    background-color: #000300;
+    /* Default background color */
+    border-radius: 30px;
+    box-shadow: 0px 0px 70px rgba(225, 239, 183, 0.5);
+    /* Blue glow */
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    /* Text on left, image on right */
+    align-items: stretch;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/174/574/small/hexagonal-abstract-technology-background-illustration-vector.jpg");
+    padding: 20px;
+}
+
+.content p {
+    margin: 0;
+}
+
+.content img {
+    width: 270px;
+    /* Adjust image width as needed */
+}
+
+.glow {
+    animation: glowing 1.5s ease-in-out infinite alternate;
+    /* Glowing animation */
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 50px rgba(0, 0, 255, 1);
+        /* Increased glow */
+    }
+}
+
+
+
+a {
+    align-content: center;
+    position: relative;
+    display: inline-block;
+    padding: 35px 30px;
+    margin: 30px 0;
+    color: #52b0f3;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+a:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+a:nth-child(1) {
+    align-items: center;
+    font-size: x-large;
+    filter: hue-rotate(270deg);
+}
+
+a:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    align-items: center;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    animation: pulse 1s infinite alternate;
+}
+
+
+
+.btn span {
+    position: absolute;
+    display: block;
+}
+
+.btn:nth-child(1) span:nth-child(1),
+.btn:nth-child(1) span:nth-child(4) {
+    filter: hue-rotate(270deg);
+}
+
+.btn:nth-child(2) span:nth-child(1),
+.btn:nth-child(2) span:nth-child(4) {
+    filter: hue-rotate(110deg);
+}
+
+.btn:nth-child(1) span:nth-child(1),
+.btn:nth-child(2) span:nth-child(1),
+.btn:nth-child(3) span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.btn:nth-child(1) span:nth-child(2),
+.btn:nth-child(2) span:nth-child(2),
+.btn:nth-child(3) span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.btn:nth-child(1) span:nth-child(4),
+.btn:nth-child(2) span:nth-child(4),
+.btn:nth-child(3) span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    animation: none;
+    /* Disable animation on hover */
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0c0944;
+    background-image: url("https://techcrunch.com/wp-content/uploads/2020/06/bluekai-tc-hero.gif?w=1390&crop=1");
+}
+
+
+
+header {
+    background-image: url("https://techcrunch.com/wp-content/uploads/2020/06/bluekai-tc-hero.gif?w=1390&crop=1");
+    background-color: #6c2a2a;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 90px;
+    color: #e0f3d0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    color: #333;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+
+footer {
+    background-color: #010f02;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}

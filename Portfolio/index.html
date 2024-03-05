@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="script.js"></script>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('clock').textContent = timeString;
+        }
+        setInterval(updateTime, 1000);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deb - Portfolio</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <style>
+        #clock {
+            float: right;
+            margin-top: 25px;
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="parisienne-regular">Deb </h1>
+                <h3>Intern at Savitar Technologies Pvt Ltd.</h3>
+                <span id="clock"></span>
+                <ul>
+                    <li><a href="About\index.html">About</a></li>
+                    <li><a href="ML\index.html">Work Area</a></li>
+                    <li><a href="Contact\index.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="tile" id="glowing-tile">
+        <div class="content">
+            <p class="descr">I am an accomplished machine learning expert with a passion for unraveling complex data
+                puzzles and creating intelligent systems. With a solid foundation in mathematics, statistics, and
+                computer science, I specialize in leveraging advanced algorithms and cutting-edge techniques to extract
+                meaningful insights from data. My expertise spans a wide array of domains, including natural language
+                processing, computer vision, and predictive modeling.
+                <br><br>
+                Throughout my career, I have spearheaded numerous projects, from developing sophisticated recommendation
+                systems for e-commerce platforms to designing deep learning architectures for image recognition tasks. I
+                thrive on pushing the boundaries of what is possible with machine learning, constantly seeking
+                innovative solutions to real-world problems.
+                <br><br>
+                My journey in machine learning has been marked by continuous learning and exploration. I stay abreast of
+                the latest research breakthroughs and eagerly experiment with emerging technologies to stay ahead of the
+                curve. Whether it's fine-tuning hyperparameters or architecting neural networks, I approach each
+                challenge with a blend of analytical rigor and creative problem-solving.
+
+                Beyond technical proficiency, I am adept at communicating complex concepts in a clear and concise
+                manner, whether to fellow experts or stakeholders with non-technical backgrounds. I am driven by a
+                desire to democratize machine learning and empower others to harness its transformative potential.
+
+                In summary, I am a dedicated machine learning enthusiast with a proven track record of delivering
+                impactful solutions in diverse domains. I am always eager to collaborate on exciting projects and
+                contribute to the advancement of artificial intelligence.
+            </p>
+            <img src="tile image.jpeg" alt="Your Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 Deb Subhodip. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+
+</html>
